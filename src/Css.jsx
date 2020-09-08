@@ -1,12 +1,14 @@
-import React from 'react'
-
+import React from 'react';
+import AOS from 'aos';
 const Css  = ()=>{
+    AOS.init();
     return(
         <>
-         <section className="mt-5 css">
+         <section className="mt-5 css" >
              <div className="container">
                  <div className="row">
-                     <div className="col-md-6 col-10 mx-auto">
+                     <div className="col-md-6 col-10 mx-auto"  data-aos="fade-up" data-aos-duration="300"
+                     data-aos-easing="ease-in-out-cubic">
                          <h3 className="mb-4">1.What is CSS?</h3>
                          <ul>
                              <li><p>CSS stands for Cascading Style Sheets</p></li>
@@ -15,7 +17,8 @@ const Css  = ()=>{
                              <li><p>External stylesheets are stored in CSS files</p></li>
                          </ul>
                      </div>
-                     <div className="col-md-6 col-10 mx-auto">
+                     <div className="col-md-6 col-10 mx-auto"  data-aos="fade-down" data-aos-duration="300"
+                     data-aos-easing="ease-in-out-cubic">
                          <h3 className="mb-4">2.Why Use CSS?</h3>
                          <p>CSS is used to define styles for your web pages, including the design, layout and variations in display for different devices and screen sizes.</p>
                          
@@ -27,7 +30,8 @@ const Css  = ()=>{
          <section className="mt-5 css">
              <div className="container">
                  <div className="row">
-                     <div className="col-md-6 col-10 mx-auto">
+                     <div className="col-md-6 col-10 mx-auto"  data-aos="fade-right" data-aos-duration="300"
+                     data-aos-easing="ease-in-out-cubic">
                          <h3 className="mb-4">3.CSS Example</h3>
                          <h4 className="ml-5"><span className="text-danger">body</span> &#123;<br/>background-color: lightblue;<br/>&#125;</h4>
                          <h4 className="ml-5"><span className="text-danger">h1</span> &#123;<br/>color: white;<br/>
@@ -35,7 +39,8 @@ const Css  = ()=>{
                          <h4 className="ml-5"><span className="text-danger">p</span> &#123;<br/>font-family: verdana;<br/>
                          font-size: 20px; <br/> &#125;</h4>
                      </div>
-                     <div className="col-md-6 col-10 mx-auto">
+                     <div className="col-md-6 col-10 mx-auto"  data-aos="fade-left" data-aos-duration="300"
+                     data-aos-easing="ease-in-out-cubic">
                      <h3 className="mb-4">4.CSS Solved a Big Problem</h3>
                      <p>HTML was NEVER intended to contain tags for formatting a web page!</p>
                      <p>HTML was created to describe the content of a web page, like:</p>
@@ -51,7 +56,8 @@ const Css  = ()=>{
          <section className="mt-5 css">
              <div className="container">
                  <div className="row">
-                     <div className="col-md-6 col-10 mx-auto">
+                     <div className="col-md-6 col-10 mx-auto"  data-aos="fade-right" data-aos-duration="300"
+                     data-aos-easing="ease-in-out-cubic">
                          <h3>5.CSS Syntax</h3>
                          <p>A CSS rule-set consists of a selector and a declaration block:</p>
                          <table className="table table-striped">
@@ -80,7 +86,8 @@ const Css  = ()=>{
                          <p>Each declaration includes a CSS property name and a value, separated by a colon.</p>
                          <p>Multiple CSS declarations are separated with semicolons, and declaration blocks are surrounded by curly braces.</p>
                      </div>
-                     <div className="col-md-6 col-10 mx-auto">
+                     <div className="col-md-6 col-10 mx-auto"  data-aos="fade-left" data-aos-duration="300"
+                     data-aos-easing="ease-in-out-cubic">
                          <h3>6.Example</h3>
                          <p>In this example all &lt;p&gt; elements will be center-aligned, with a red text color:</p>
                          <h4 className="ml-5">
@@ -97,7 +104,8 @@ const Css  = ()=>{
         <section className="my-5 css">
             <div className="container">
                 <div className="row">
-                    <div className="col-md-6 col-10 mx-auto">
+                    <div className="col-md-6 col-10 mx-auto"  data-aos="fade-right" data-aos-duration="300"
+                     data-aos-easing="ease-in-out-cubic">
                         <h3>7.CSS Selectors</h3>
                         <p>CSS selectors are used to "find" (or select) the HTML elements you want to style.</p>
                         <p>We can divide CSS selectors into five categories:</p>
@@ -110,7 +118,8 @@ const Css  = ()=>{
                         </ul>
                         <p>This page will explain the most basic CSS selectors.</p>
                     </div>
-                    <div className="col-md-6 col-10 mx-auto">
+                    <div className="col-md-6 col-10 mx-auto"  data-aos="fade-left" data-aos-duration="300"
+                     data-aos-easing="ease-in-out-cubic">
                         <h3>8.The CSS element Selector</h3>
                         <p>The element selector selects HTML elements based on the element name.</p>
                         <h4>Example</h4>
@@ -127,7 +136,8 @@ const Css  = ()=>{
         <section className="mb-5 css">
             <div className="container">
                 <div className="row">
-                    <div className="col-md-6 col-10 mx-auto">
+                    <div className="col-md-6 col-10 mx-auto"  data-aos="fade-right" data-aos-duration="300"
+                     data-aos-easing="ease-in-out-cubic">
                         <h3>9.The CSS id Selector</h3>
                         <p>The id selector uses the id attribute of an HTML element to select a specific element.</p>
                         <p>The id of an element is unique within a page, so the id selector is used to select one unique element!</p>

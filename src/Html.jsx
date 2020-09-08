@@ -1,12 +1,16 @@
 import React from 'react'
 import logo2 from './images/html.gif'
+import  AOS  from 'aos'
 const Html =()=>{
+    AOS.init()
     return(
         <>
         <section className="mt-5 html">
             <div className="container">
                 <div className="row">
-                    <div className="col-md-6 col-10 mx-auto">
+                    <div className="col-md-6 col-10 mx-auto"  data-aos="fade-down"
+                     data-aos-duration="300"
+                     data-aos-easing="ease-in-out-cubic">
                         <h3 className="mb-5">1.What is HTML?</h3>
                         <ul>
                             <li>
@@ -29,7 +33,8 @@ const Html =()=>{
                             </li>
                         </ul>
                     </div>
-                    <div className="col-md-6 col-10 mx-auto">
+                    <div className="col-md-6 col-10 mx-auto"  data-aos="fade-up" data-aos-duration="300"
+                     data-aos-easing="ease-in-out-cubic">
                     <h3 className="mb-5">2.A Simple HTML Document</h3>
                         <p className="font-weight-bold m-5">
                         &lt;!DOCTYPE html&gt;<br/>
@@ -52,7 +57,8 @@ const Html =()=>{
         <section className="mt-5 html">
             <div className="container">
                 <div className="row mt-4">
-                    <div className="col-md-6 col-10 mx-auto">
+                    <div className="col-md-6 col-10 mx-auto"  data-aos="fade-right" data-aos-duration="300"
+                     data-aos-easing="ease-in-out-cubic">
                         <h3  className="mb-5">3.Example Expained</h3>
                         <ul>
                             <li><p>The  <span className="text-danger">&lt;!DOCTYPE html&gt;</span> declaration defines
@@ -65,7 +71,8 @@ const Html =()=>{
                             <li><p>The <span className="text-danger">&lt;title&gt;</span> element defines a paragraph</p></li>
                         </ul>
                     </div>
-                    <div className="col-md-6 col-10 mx-auto">
+                    <div className="col-md-6 col-10 mx-auto"  data-aos="fade-left" data-aos-duration="300"
+                     data-aos-easing="ease-in-out-cubic">
                         <h3  className="mb-5">4.What is an HTML Element?</h3>
                         <p>An HTML element is defined by a start tag, some content, and an end tag:</p>
                         <h5 className="my-4"><span className="text-danger">&lt;tagname&gt;</span>Content goes here...<span className="text-danger">&lt;/tagname&gt;</span></h5>
@@ -80,7 +87,8 @@ const Html =()=>{
         <section className="mt-5 html">
             <div className="container">
                 <div className="row my-5">
-                        <div className="col-lg-10 col-10 mx-auto">
+                        <div className="col-lg-10 col-10 mx-auto"  data-aos="fade-down" data-aos-duration="300"
+                     data-aos-easing="ease-in-out-cubic">
                         <table className="table table-striped">
                             <thead>
                                 <tr>
@@ -117,7 +125,8 @@ const Html =()=>{
         <div className="container">
         <h3>6.HTML Page Structure</h3>
              <div className="row my-5">
-                 <div className="col-md-8 col-10 mx-auto">
+                 <div className="col-md-8 col-10 mx-auto"  data-aos="flip-down" data-aos-duration="300"
+                     data-aos-easing="ease-in-out-cubic">
                      <img src={logo2} className="img-fluid" alt="mypic"/>
                  </div>
              </div>

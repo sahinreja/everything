@@ -1,12 +1,14 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom';
+import AOS  from 'aos';
 
 const Singup  = ()=>{
+    AOS.init();
     return(
         <>
           <div className="container signup">
             <div className="row">
-                <div className="col-lg-5 col-md-6 col-12 mx-auto mt-3">
+                <div className="col-lg-5 col-md-6 col-12 mx-auto mt-3"  data-aos="fade-down" data-aos-duration="500" data-aos-easing="ease-in-out-cubic">
                     <div className="card" style={{border:'1px solid #0275d8'}}>
                         <div className="card-header bg-primary">
                             <h3 className="text-white">Sign Up</h3>

@@ -1,11 +1,15 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom';
+import AOS from 'aos';
 const Login  = ()=>{
+    AOS.init();
     return(
         <>
         <div className="container login">
             <div className="row">
-                <div className="col-lg-5 col-md-6 col-12 mx-auto mt-5">
+                <div className="col-lg-5 col-md-6 col-12 mx-auto mt-5"  data-aos="zoom-in" 
+                data-aos-duration="500" 
+                data-aos-easing="ease-in-out-cubic">
                     <div className="card" style={{border:'1px solid #5cb85c'}}>
                         <div className="card-header bg-success">
                             <h3 className="text-white">Login</h3>
